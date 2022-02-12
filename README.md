@@ -1,46 +1,23 @@
-# Getting Started with Create React App
+## Creare un'App React per tutti gli esercizi, strutturata in questo modo.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- ```npx create-react-app react-tutorial --template typescript```
+- creare dentro la cartella src del progetto una cartella per ogni esercizio nominata "EsercizioX" dove X è il numero dell'esercizio in questione (questo è solo per fare in modo che le cartelle compaiano in ordine, non usare numeri in scenari reali)
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Stampare in pagina i numeri da 1 a 10 in colonna.
+2. Stampare in pagina i numeri PARI da 1 a 10 in colonna facendo ricevere al componente gli input come props.
+3. Implementare due bottoni "incrementa" e "decrementa" che incrementano e decrementano un contatore mostrato in pagina.
+   Fare lo stesso esercizio sia con un componente classe che con uno funzionale (capire bene le differenze e perché evitare le classi).
+4. Modificare il componente funzionale dell'esercizio 3 in modo che prenda il valore iniziare del counter dalle props.
+5. Implementare un input che in tempo reale stampa il digitato in pagina.
+6. Implementare con un componente funzionale un bottone che permette di mostrare / nascondere una scritta in pagina, il bottone avrà la label "mostra" se il testo è nascosto, "nascondi" se il testo è in pagina.
+7. Prendere confidenza con il ciclo di vita di un componente semplicemente stampando dei log (usare le classi), usare il bottone (trasformare quindi il componente funzionale dell'esercizio 6 in un componente classe) dell'esercizio precedente per capire cosa succede quando cambia lo stato del componente.
+8. Riscrivere il componente dell'esercizio 6, ma questa volta il bottone è il componente figlio del componente principale.
+9. Implementare una figura geometrica (possibilmente grande e visibile) che sparisce al solo click fuori dalla figura stessa.
+10. Consumare la REST API https://jsonplaceholder.typicode.com/todos/1 e loggare il risultato in console.
+11. Replicare l'esercizio 10 ma questa volta stampando in pagina la proprietà "title" dell'oggetto di ritorno (ricordarsi che stiamo usando typescript, tipicizzare quindi il risultato), occhio all'asincronia.
+12. A partire dalla REST API https://fakestoreapi.com/products, mostrare a schermo delle card per ogni singolo prodotto (typescript necessario, css non necessario). Tip: iniziare a modulare un minimo.
+13. A partire dall'esercizio precedente, prevedere un link alla url / che rimanda alla url /products mostrando il risultato dell'esercizio precedente. Vedi https://reactrouter.com/docs/en/v6/getting-started.
+14. Implementare un semplice counter simil esercizo 3 ma usare Redux per le azioni di incremento e decremento e salvare il counter sullo store. Vedi https://redux-toolkit.js.org/.
+15. Prevedere un form di login (è preferibile utilizzare una REST API reale, al limite fare una mock) che fa una richiesta di tipo POST al server con username e password in request body,
+    se la login avviene con successo mandare l'utente alla url /admin dove viene mostrato in pagina il token JWT precedentemente salvato su Redux. Se le credenziale sono errate prevedere un messaggio di errore sopra il form.
+    Proteggere il contentuto dalla pagina /admin se il token jwt non è salvato su Redux, mostrando quindi un messaggio di restrizione del contenuto.
