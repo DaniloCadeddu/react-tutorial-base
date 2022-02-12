@@ -4,7 +4,7 @@
 - creare dentro la cartella src del progetto una cartella per ogni esercizio nominata "EsercizioX" dove X è il numero dell'esercizio in questione (questo è solo per fare in modo che le cartelle compaiano in ordine, non usare numeri in scenari reali)
 
 1. Stampare in pagina i numeri da 1 a 10 in colonna.
-2. Stampare in pagina i numeri PARI da 1 a 10 in colonna facendo ricevere al componente gli input come props.
+2. Stampare in pagina i numeri PARI da 1 a 10 in colonna facendo ricevere al componente in input TUTTI i numeri interi da 1 a 10 come props.
 3. Implementare due bottoni "incrementa" e "decrementa" che incrementano e decrementano un contatore mostrato in pagina.
    Fare lo stesso esercizio sia con un componente classe che con uno funzionale (capire bene le differenze e perché evitare le classi).
 4. Modificare il componente funzionale dell'esercizio 3 in modo che prenda il valore iniziare del counter dalle props.

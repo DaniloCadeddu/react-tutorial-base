@@ -1,5 +1,5 @@
 /* 
-Esercizio 2: stampare in pagina i numeri PARI da 1 a 10 in colonna facendo ricevere al componente gli input come props
+Esercizio 2: Stampare in pagina i numeri PARI da 1 a 10 in colonna facendo ricevere al componente in input TUTTI i numeri interi da 1 a 10 come props.
 */
 
 interface Props {
