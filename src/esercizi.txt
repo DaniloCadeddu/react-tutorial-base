@@ -16,7 +16,7 @@ Creare un'App React per tutti gli esercizi, strutturata in questo modo.
 11) Replicare l'esercizio 10 ma questa volta stampando in pagina la proprietà "title" dell'oggetto di ritorno (ricordarsi che stiamo usando typescript, tipicizzare quindi il risultato), occhio all'asincronia.
 12) A partire dalla REST API https://fakestoreapi.com/products, mostrare a schermo delle card per ogni singolo prodotto (typescript necessario, css non necessario). Tip: iniziare a modulare un minimo.
 13) A partire dall'esercizio precedente, prevedere un link alla url / che rimanda alla url /products mostrando il risultato dell'esercizio precedente. Vedi https://reactrouter.com/docs/en/v6/getting-started.
-14) Implementare un semplice counter simil esercizo 3 ma usare Redux per le azioni di incremento e decremento e salvare il counter sullo store. Vedi https://redux-toolkit.js.org/.
+14) Implementare un semplice counter simil esercizio 3 ma usare Redux per le azioni di incremento e decremento e salvare il counter sullo store. Vedi https://redux-toolkit.js.org/.
 15) Prevedere un form di login (è preferibile utilizzare una REST API reale, al limite fare una mock) che fa una richiesta di tipo POST al server con username e password in request body, 
     se la login avviene con successo mandare l'utente alla url /admin dove viene mostrato in pagina il token JWT precedentemente salvato su Redux. Se le credenziale sono errate prevedere un messaggio di errore sopra il form.
     Proteggere il contentuto dalla pagina /admin se il token jwt non è salvato su Redux, mostrando quindi un messaggio di restrizione del contenuto.
